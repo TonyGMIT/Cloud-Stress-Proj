@@ -9,6 +9,7 @@ export default function ChartPage() {
         <title>Stress Check - Stress Chart</title>
       </Head>
       <Chart />
+      
       <Footer />
     </>
   );

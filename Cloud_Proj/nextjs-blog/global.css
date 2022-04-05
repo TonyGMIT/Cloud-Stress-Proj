@@ -90,6 +90,7 @@ img {
   text-align: center;
   text-decoration: none;
   font-size: 25px;
+  position: relative;
   margin-left: 180px;
   cursor: pointer;
   border-radius: 50%;
@@ -104,6 +105,7 @@ img {
   text-align: center;
   text-decoration: none;
   font-size: 25px;
+  position: relative;
   margin-left: 145px;
   cursor: pointer;
   border-radius: 50%;
@@ -118,6 +120,7 @@ img {
   text-align: center;
   text-decoration: none;
   font-size: 25px;
+  position: relative;
   margin-left: 130px;
   cursor: pointer;
   border-radius: 50%;
@@ -132,6 +135,7 @@ img {
   text-align: center;
   text-decoration: none;
   font-size: 25px;
+  position: relative;
   margin-left: 140px;
   cursor: pointer;
   border-radius: 50%;
@@ -146,6 +150,7 @@ img {
   text-align: center;
   text-decoration: none;
   font-size: 25px;
+  position: relative;
   margin-left: 140px;
   cursor: pointer;
   border-radius: 50%;

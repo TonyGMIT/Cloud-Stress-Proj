@@ -52,6 +52,25 @@ function Stress() {
     AwfulCtx.setAwfulNum("" + AwfulNum);
   }
 
+  function Reset() {
+    moodNum = GoodCtx.getMoodNum();
+    moodNum = parseInt(moodNum);
+    GoodCtx.setMoodNum("0");
+    FineNum = FineCtx.getFineNum();
+    FineNum = parseInt(FineNum);
+    FineCtx.setFineNum("0");
+    MildNum = MildCtx.getMildNum();
+    MildNum = parseInt(MildNum);
+    MildCtx.setMildNum("0");
+    BadNum = BadCtx.getBadNum();
+    BadNum = parseInt(BadNum);
+    BadCtx.setBadNum("0");
+    AwfulNum = AwfulCtx.getAwfulNum();
+    AwfulNum = parseInt(AwfulNum);
+    AwfulCtx.setAwfulNum("0");
+  }
+
+
   return (
 
       <div className="StressBox">
@@ -61,6 +80,7 @@ function Stress() {
           <button class="MildBtn" auto onClick={() => incrementMild()}>Mild</button>
           <button class="BadBtn" auto onClick={() => incrementBad()}>Bad</button>
           <button class="AwfulBtn" auto onClick={() => incrementAwful()}>Awful</button>
+          <button class="AwfulBtn" auto onClick={() => Reset()}>Reset</button>
       </div>
   );
 }
