@@ -74,7 +74,7 @@ function Stress() {
   return (
 
       <div className="StressBox">
-        <img src="STR.png" alt="STR" className="center"></img>
+        <img src="STR.jpg" alt="STR" className="center"></img>
           <button class="GoodBtn" auto onClick={() => incrementGood()}>Good</button>
           <button class="FineBtn" auto onClick={() => incrementFine()}>Fine</button>
           <button class="MildBtn" auto onClick={() => incrementMild()}>Mild</button>
