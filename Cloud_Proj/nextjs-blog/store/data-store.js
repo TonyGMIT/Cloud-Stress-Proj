@@ -1,7 +1,7 @@
 import { createContext, useState, useEffect } from 'react';
 
 const initialDataState = {
-    moodNum: '0'
+    moodNum: '0',
 }
 const DataContext = createContext(initialDataState);
 

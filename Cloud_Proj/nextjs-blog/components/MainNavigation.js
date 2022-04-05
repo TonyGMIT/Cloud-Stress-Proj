@@ -4,14 +4,26 @@ import { Avatar } from '@nextui-org/react';
 import { useContext } from 'react';
 import DataContext from '../store/data-store.js'
 import FineContext from "../store/Fine-store";
+import MildContext from "../store/Mild-store";
+import BadContext from "../store/Bad-store";
+import AwfulContext from "../store/Awful-store";
 
 function MainNavigation(props) {
-  const dataCtx = useContext(DataContext)
-  let moodNums = dataCtx.getMoodNum()
+  const GoodCtx = useContext(DataContext)
+  let moodNums = GoodCtx.getMoodNum()
 
-  const dataCtxs = useContext(FineContext);
-  let FineNums = dataCtxs.getFineNum();
-  
+  const FineCtx = useContext(FineContext);
+  let FineNums = FineCtx.getFineNum();
+
+  const MildCtx = useContext(MildContext);
+  let MildNums = MildCtx.getMildNum();
+
+  const BadCtx = useContext(BadContext);
+  let BadNums = BadCtx.getBadNum();
+
+  const AwfulCtx = useContext(AwfulContext);
+  let AwfulNums = AwfulCtx.getAwfulNum();
+
   return (
     <div>
       <header className={classes.header}>
@@ -25,13 +37,13 @@ function MainNavigation(props) {
             <Avatar text={FineNums} size="md" color="secondary" textColor="white"/>
           </div>
           <div>
-            <Avatar text={moodNums} size="md" color="primary" textColor="white"/>
+            <Avatar text={MildNums} size="md" color="primary" textColor="white"/>
           </div>
           <div>
-            <Avatar text={moodNums} size="md" color="warning" textColor="white"/>
+            <Avatar text={BadNums} size="md" color="warning" textColor="white"/>
           </div>
           <div>
-            <Avatar text={moodNums} size="md" color="error" textColor="white"/>
+            <Avatar text={AwfulNums} size="md" color="error" textColor="white"/>
           </div>
             <space>
               <Link href="/">Home</Link>
